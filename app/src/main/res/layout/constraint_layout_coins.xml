@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/constraint_layout_coins"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  app:layout_constraintEnd_toEndOf="parent"
+  app:layout_constraintStart_toStartOf="parent"
+  app:layout_constraintTop_toBottomOf="@+id/card_view_banner"
+  tools:showIn="@layout/content_main">
+
+    <androidx.cardview.widget.CardView
+      android:id="@+id/card_view_pennies"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/full_margin"
+      app:layout_constraintEnd_toStartOf="@id/card_view_nickles"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+            <ImageView
+              android:id="@+id/image_view_pennies"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/penny"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              tools:ignore="ContentDescription"/>
+
+            <EditText
+              android:id="@+id/edit_text_pennies"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:hint="0"
+              android:importantForAutofill="no"
+              android:inputType="number"
+              app:layout_constraintEnd_toEndOf="@+id/image_view_pennies"
+              app:layout_constraintStart_toStartOf="@+id/image_view_pennies"
+              app:layout_constraintTop_toBottomOf="@+id/image_view_pennies"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+      android:id="@+id/card_view_nickles"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/full_margin"
+      app:layout_constraintEnd_toStartOf="@id/card_view_dimes"
+      app:layout_constraintStart_toEndOf="@id/card_view_pennies"
+      app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+            <ImageView
+              android:id="@+id/image_view_nickles"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/nickel"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              tools:ignore="ContentDescription"/>
+
+            <EditText
+              android:id="@+id/edit_text_nickles"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:hint="0"
+              android:importantForAutofill="no"
+              android:inputType="number"
+              app:layout_constraintEnd_toEndOf="@+id/image_view_nickles"
+              app:layout_constraintStart_toStartOf="@+id/image_view_nickles"
+              app:layout_constraintTop_toBottomOf="@+id/image_view_nickles"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+      android:id="@+id/card_view_dimes"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/full_margin"
+      app:layout_constraintEnd_toStartOf="@+id/card_view_quarters"
+      app:layout_constraintStart_toEndOf="@id/card_view_nickles"
+      app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+            <ImageView
+              android:id="@+id/image_view_dimes"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/dime"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              tools:ignore="ContentDescription"/>
+
+            <EditText
+              android:id="@+id/edit_text_dimes"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:hint="0"
+              android:importantForAutofill="no"
+              android:inputType="number"
+              app:layout_constraintEnd_toEndOf="@+id/image_view_dimes"
+              app:layout_constraintStart_toStartOf="@+id/image_view_dimes"
+              app:layout_constraintTop_toBottomOf="@+id/image_view_dimes"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+      android:id="@+id/card_view_quarters"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/full_margin"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/card_view_dimes"
+      app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+            <ImageView
+              android:id="@+id/image_view_quarters"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/quarter"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              tools:ignore="ContentDescription"/>
+
+            <EditText
+              android:id="@+id/edit_text_quarters"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:hint="0"
+              android:importantForAutofill="no"
+              android:inputType="number"
+              app:layout_constraintEnd_toEndOf="@+id/image_view_quarters"
+              app:layout_constraintStart_toStartOf="@+id/image_view_quarters"
+              app:layout_constraintTop_toBottomOf="@+id/image_view_quarters"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

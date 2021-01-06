@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="full_margin">8dp</dimen>
+    <dimen name="half_margin">4dp</dimen>
+    <dimen name="big_margin">24dp</dimen>
+</resources>
